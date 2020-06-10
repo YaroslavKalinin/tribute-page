@@ -1,0 +1,80 @@
+/* Fonts */
+@font-face {
+    font-family: 'Roboto';
+    src:
+        url(../assets/fonts/Roboto-Regular.ttf),
+        url(../assets/fonts/Roboto-Italic.ttf),
+        url(../assets/fonts/Roboto-Bold.ttf);
+}
+
+/* Global */
+*{
+    box-sizing: content-box;
+}
+
+html {
+    font-family: 'Roboto';
+    font-size: 32px;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+.logo {
+    float: left;
+    height: 64px;
+}
+
+.navbar {
+    float: right;
+}
+
+.navbar-nav {
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 0px 32px 0px 32px;
+    padding: 10px 4px 10px 4px;
+}
+
+.current {
+    background-color: black;
+    color: white;
+}
+
+/* Showcase */
+.showcase {
+    margin-top: 30px;
+    padding-bottom: 64px;
+}
+
+.media-body {
+    width: 60%;
+    float: left;
+}
+
+.media-img {
+    float: right;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
