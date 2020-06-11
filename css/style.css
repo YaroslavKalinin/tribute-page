@@ -14,7 +14,7 @@
 
 html {
     font-family: 'Roboto';
-    font-size: 32px;
+    font-size: 24px;
 }
 
 body {
@@ -62,11 +62,12 @@ body {
 }
 
 .media-body {
-    width: 60%;
-    float: left;
+    text-indent: 2rem;
+    line-height: 1.7rem;
 }
 
-.media-img {
+.media-img-right {
+    margin-left: 1rem;
     float: right;
 }
 
