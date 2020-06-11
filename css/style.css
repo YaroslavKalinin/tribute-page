@@ -73,6 +73,11 @@ body {
     color: white;
 }
 
+#contact-me {
+    margin-left: 2rem;
+    line-height: 3rem;
+}
+
 /* Tab */
 .tab {
     position: relative;
@@ -121,4 +126,8 @@ footer {
 .active {
     display: block;
     animation: 1s slideleft ease;
+}
+
+.icon {
+    width: 1rem;
 }
