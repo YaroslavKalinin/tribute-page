@@ -7,6 +7,12 @@
         url(../assets/fonts/Roboto-Bold.ttf);
 }
 
+/* Variables */
+:root {
+    --primary-color: black;
+    --secondary-color: #A8A8A3;
+}
+
 /* Global */
 *{
     box-sizing: content-box;
@@ -41,25 +47,40 @@ body {
 
 .navbar-nav {
     margin: 0;
+    padding-top: 10px;
     list-style-type: none;
 }
 
-.nav-item {
+.navbar-nav li {
     display: inline-block;
-    margin: 0px 32px 0px 32px;
-    padding: 10px 4px 10px 4px;
 }
 
-.current {
-    background-color: black;
+.nav-item {
+    margin: 0px 32px 0px 32px;
+    padding: 20px 4px 10px 4px;
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: var(--secondary-color);
     color: white;
 }
 
-/* Showcase */
-.showcase {
-    margin-top: 30px;
-    padding-bottom: 64px;
+.current {
+    background-color: var(--primary-color);
+    color: white;
 }
+
+/* Tab */
+.tab {
+    position: relative;
+    display: none;
+    width: 100%;
+}
+
+/* Media */
 
 .media-body {
     text-indent: 2rem;
@@ -71,11 +92,33 @@ body {
     float: right;
 }
 
-/* footer */
+.media-img-left {
+    margin-right: 1rem;
+    float: left;
+}
+
+.showcase {
+    margin-top: 30px;
+    padding-bottom: 64px;
+}
+
+/* Footer */
 footer {
     width: 100%;
     position: absolute;
     bottom: 0px;
     margin-bottom: 10px;
     text-align: center;
+}
+
+/* Animations */
+@keyframes slideleft {
+    from { left: -100% ;}
+    to { left: 0px;}
+}
+
+/* Helpers */
+.active {
+    display: block;
+    animation: 1s slideleft ease;
 }
