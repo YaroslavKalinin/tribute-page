@@ -153,6 +153,7 @@ footer {
     }
 
     .media-body, .media-img-right, .media-img-left {
+        width: 100%;
         float: none;
         display: block;
     }
@@ -184,5 +185,54 @@ footer {
 
     .navbar.responsive {
         height: 200px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 300px;
+    }
+
+    .media-body, .media-img-right, .media-img-left {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        float: none;
+        display: block;
+    }
+
+    .navbar {
+        float: none;
+        clear: both;
+        height: 0;
+        transition: height 1s ease-in;
+    }
+
+    .toggler {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar .navbar-nav li {
+        display: block;
+        margin: 10px;
+        padding: 10px;
+
+    }
+    .navbar .nav-item {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .navbar.responsive {
+        height: 200px;
+    }
+
+    #contact-me {
+        margin-left: 0;
+        font-size: 0.7rem;
+        line-height: 2rem;
     }
 }
