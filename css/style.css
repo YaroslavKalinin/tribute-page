@@ -33,6 +33,7 @@ body {
     width: 1100px;
     margin: auto;
     overflow: hidden;
+    position: relative;
 }
 
 /* Header */
@@ -76,6 +77,19 @@ body {
 #contact-me {
     margin-left: 2rem;
     line-height: 3rem;
+}
+
+.toggler {
+    padding: 10px;
+    display: none;
+}
+
+.toggler:hover {
+    background-color: var(--secondary-color);
+}
+
+.toggler img {
+    width: 1rem;
 }
 
 /* Tab */
@@ -130,4 +144,45 @@ footer {
 
 .icon {
     width: 1rem;
+}
+
+/* Queries */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 550px;
+    }
+
+    .media-body, .media-img-right, .media-img-left {
+        float: none;
+        display: block;
+    }
+
+    .navbar {
+        float: none;
+        clear: both;
+        height: 0;
+        transition: height 1s ease-in;
+    }
+
+    .toggler {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar .navbar-nav li {
+        display: block;
+        margin: 10px;
+        padding: 10px;
+
+    }
+    .navbar .nav-item {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .navbar.responsive {
+        height: 200px;
+    }
 }

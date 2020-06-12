@@ -22,3 +22,9 @@ document.querySelectorAll(".nav-item").forEach((item) => {
         }
     );
 });
+
+
+/* subscribe handler to nav toggler */
+document.querySelector('.toggler').addEventListener('click', (e) => {
+    document.querySelector('.navbar').classList.toggle('responsive');
+});
